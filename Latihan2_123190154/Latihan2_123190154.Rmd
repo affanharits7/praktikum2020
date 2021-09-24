@@ -1,0 +1,55 @@
+---
+title: "Latihan2_123190154"
+author: "Affan Harits Alfiantoro"
+date: "9/24/2021"
+output: html_document
+---
+
+## Import Dataset "murders"
+```{r}
+library(dslabs)
+data(murders)
+```
+
+1. Pernyataan yang menggambarkan karakter dataset murders adalah
+   (a) Terdiri dari 51 negara
+   
+```{r}
+str(murders)
+```
+
+2. Nama kolom yang digunakan pada dataset murders 
+
+```{r}
+names(murders)
+```
+
+3. Menyimpan singkatan negara pada objek a
+
+```{r}
+a <- (murders$abb)
+class(a)
+```
+
+4. Menyimpan singkatan negara pada objek b
+
+```{r}
+b <- murders[[2]]
+class(b)
+```
+
+5. Menggunakan fungsi level untuk melihat jumlah kategori yang dimiliki variabel
+
+```{r}
+levels(murders$region)
+```
+ Menggunakan fungsi length untuk menentukan jumlah region yang dimiliki dataset
+ ```{r}
+length(murders$region)
+```
+
+6. Menggunakan Fungsi tabel untuk menampilkan tabel baru yang berisi jumlah state    pada tiap region
+
+```{r}
+table(state.region)
+```
